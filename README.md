@@ -1,7 +1,7 @@
 
-  # Portfolio web minimalista
-
-  This is a code bundle for Portfolio web minimalista. The original project is available at https://www.figma.com/design/0Q0itHAiWEqyZs6JHsz9lC/Portfolio-web-minimalista.
+  # Portfolio web 
+Portafolio, página web
+  
 
   ## Running the code
 
