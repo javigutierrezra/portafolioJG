@@ -29,7 +29,7 @@ export function Contact() {
 
         <div className="grid md:grid-cols-3 gap-6">
           <motion.a
-            href="mailto:tu@email.com"
+            href="javieragutierrez.dev@gmail.com"
             whileHover={{ scale: 1.02, y: -2 }}
             transition={{ duration: 0.2 }}
             className="flex flex-col items-center gap-4 p-8 backdrop-blur-sm bg-white/[0.02] border border-white/[0.08] rounded-2xl hover:bg-white/[0.04] hover:border-white/[0.12] transition-all duration-300 group"
@@ -39,7 +39,7 @@ export function Contact() {
           </motion.a>
 
           <motion.a
-            href="https://github.com"
+            href="https://github.com/javigutierrezra"
             target="_blank"
             rel="noopener noreferrer"
             whileHover={{ scale: 1.02, y: -2 }}
@@ -51,7 +51,7 @@ export function Contact() {
           </motion.a>
 
           <motion.a
-            href="https://linkedin.com"
+            href="https://linkedin.com/in/javiera-gutierrez"
             target="_blank"
             rel="noopener noreferrer"
             whileHover={{ scale: 1.02, y: -2 }}

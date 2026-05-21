@@ -2,6 +2,7 @@ import { motion } from 'motion/react';
 import { Lightbulb, Users, BookOpen, Heart } from 'lucide-react';
 import { Section } from '../components/Section';
 import { GlassCard } from '../components/GlassCard';
+import lumiLogo from '../assets/lumilingua.jpg';
 
 export function Lumi() {
   return (
@@ -44,7 +45,11 @@ export function Lumi() {
               }}
               className="absolute inset-0 bg-gradient-to-br from-blue-500/30 to-purple-500/30 blur-3xl"
             />
-            <Lightbulb className="relative w-32 h-32 text-blue-300" />
+            <img
+              src={lumiLogo}
+              alt="Lumilingua"
+              className="relative w-full h-full object-cover rounded-2x1" />
+            
           </motion.div>
 
           <h3 className="text-3xl font-medium mb-10 text-center text-blue-100">
