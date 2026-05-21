@@ -8,7 +8,7 @@ interface SectionProps {
 
 export function Section({ id, children, className = '' }: SectionProps) {
   return (
-    <section id={id} className={`relative py-20 px-6 md:px-12 lg:px-24 ${className}`}>
+    <section id={id} className={`relative py-24 px-6 md:px-16 lg:px-32 ${className}`}>
       {children}
     </section>
   );

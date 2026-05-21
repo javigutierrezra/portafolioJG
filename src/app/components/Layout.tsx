@@ -8,35 +8,23 @@ export function Layout() {
 
   const navItems = [
     { name: 'Inicio', path: '/' },
-    { name: 'Sobre mí', path: '/sobre-mi' },
+    { name: 'Lumilingua', path: '/lumi' },
     { name: 'Proyectos', path: '/proyectos' },
     { name: 'Contacto', path: '/contacto' },
   ];
 
   return (
-    <div className="min-h-screen bg-gradient-to-b from-slate-950 via-blue-950 to-slate-950 text-white overflow-x-hidden">
+    <div className="min-h-screen bg-gradient-to-b from-slate-950 via-slate-950 to-blue-950/80 text-white overflow-x-hidden">
       <StarField />
 
       {/* Navigation */}
       <motion.nav
         initial={{ y: -100 }}
         animate={{ y: 0 }}
-        className="fixed top-0 left-0 right-0 z-50 backdrop-blur-lg bg-slate-950/50 border-b border-white/10"
+        className="fixed top-0 left-0 right-0 z-50 backdrop-blur-md bg-slate-950/30 border-b border-white/[0.06]"
       >
-        <div className="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
-          <Link to="/">
-            <motion.div
-              className="flex items-center gap-2"
-              whileHover={{ scale: 1.05 }}
-            >
-              <Sparkles className="w-6 h-6 text-blue-400" />
-              <span className="text-xl font-semibold bg-gradient-to-r from-blue-400 to-purple-400 bg-clip-text text-transparent">
-                Javiera Gutiérrez
-              </span>
-            </motion.div>
-          </Link>
-
-          <div className="hidden md:flex gap-8">
+        <div className="max-w-7xl mx-auto px-6 py-5 flex items-center justify-center">
+          <div className="flex gap-10">
             {navItems.map((item, i) => {
               const isActive = location.pathname === item.path;
               return (
@@ -44,13 +32,13 @@ export function Layout() {
                   <motion.div
                     className={`${
                       isActive
-                        ? 'text-blue-400'
-                        : 'text-blue-100/70 hover:text-blue-400'
-                    } transition-colors`}
-                    whileHover={{ y: -2 }}
-                    initial={{ opacity: 0, y: -20 }}
+                        ? 'text-blue-300'
+                        : 'text-blue-100/50 hover:text-blue-200'
+                    } transition-colors text-base font-light`}
+                    whileHover={{ y: -1 }}
+                    initial={{ opacity: 0, y: -10 }}
                     animate={{ opacity: 1, y: 0 }}
-                    transition={{ delay: i * 0.1 }}
+                    transition={{ delay: i * 0.1, duration: 0.4 }}
                   >
                     {item.name}
                   </motion.div>
@@ -67,7 +55,7 @@ export function Layout() {
       </main>
 
       {/* Footer */}
-      <footer className="relative py-12 px-6 border-t border-white/10 backdrop-blur-md">
+      <footer className="relative py-16 px-6 border-t border-white/[0.04] backdrop-blur-sm mt-24">
         <div className="max-w-7xl mx-auto text-center">
           <motion.div
             initial={{ opacity: 0 }}
@@ -75,14 +63,13 @@ export function Layout() {
             viewport={{ once: true }}
             className="flex items-center justify-center gap-2 mb-4"
           >
-            <Sparkles className="w-5 h-5 text-blue-400" />
-            <span className="text-sm text-blue-200/60">
-              Diseñado y desarrollado con
+            <span className="text-sm text-blue-200/40 font-light">
+              Diseñado con
             </span>
-            <Heart className="w-5 h-5 text-pink-400" />
+            <Heart className="w-4 h-4 text-pink-400/60" />
           </motion.div>
-          <p className="text-sm text-blue-200/40">
-            © 2026 - Creando experiencias digitales inclusivas y accesibles
+          <p className="text-xs text-blue-200/30 font-light">
+            © 2026 Javiera Gutiérrez
           </p>
         </div>
       </footer>

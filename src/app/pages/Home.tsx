@@ -1,5 +1,4 @@
 import { motion } from 'motion/react';
-import { Sparkles } from 'lucide-react';
 import { Section } from '../components/Section';
 import { Link } from 'react-router';
 
@@ -8,77 +7,58 @@ export function Home() {
     <Section id="inicio" className="min-h-screen flex items-center justify-center pt-20">
       <div className="max-w-6xl mx-auto text-center">
         <motion.div
-          initial={{ opacity: 0, scale: 0.8 }}
-          animate={{ opacity: 1, scale: 1 }}
-          transition={{ duration: 0.8 }}
-          className="mb-8"
+          initial={{ opacity: 0, y: 20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ delay: 0.2, duration: 0.6 }}
+          className="mb-12"
         >
-          <div className="relative inline-block">
-            <motion.div
-              className="absolute inset-0 bg-gradient-to-r from-blue-500 to-purple-500 rounded-full blur-3xl opacity-30"
-              animate={{
-                scale: [1, 1.2, 1],
-                opacity: [0.3, 0.5, 0.3],
-              }}
-              transition={{
-                duration: 4,
-                repeat: Infinity,
-                ease: "easeInOut"
-              }}
-            />
-            <Sparkles className="relative w-20 h-20 md:w-24 md:h-24 text-blue-400 mx-auto" />
-          </div>
+          <h2 className="text-2xl md:text-3xl font-normal text-blue-100/70 tracking-wide">
+            Javiera Gutiérrez
+          </h2>
         </motion.div>
 
         <motion.h1
-          initial={{ opacity: 0, y: 30 }}
+          initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
-          transition={{ delay: 0.3 }}
-          className="text-5xl md:text-7xl lg:text-8xl font-bold mb-6 bg-gradient-to-r from-blue-400 via-purple-400 to-pink-400 bg-clip-text text-transparent"
+          transition={{ delay: 0.4, duration: 0.6 }}
+          className="text-4xl md:text-6xl lg:text-7xl font-medium mb-16 bg-gradient-to-r from-blue-300 via-blue-200 to-purple-300 bg-clip-text text-transparent leading-tight"
         >
-          Desarrolladora Creativa
+          Diseño experiencias digitales inclusivas
         </motion.h1>
 
         <motion.p
-          initial={{ opacity: 0, y: 30 }}
+          initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
-          transition={{ delay: 0.5 }}
-          className="text-xl md:text-2xl text-blue-100/80 mb-4 max-w-3xl mx-auto leading-relaxed"
+          transition={{ delay: 0.6, duration: 0.6 }}
+          className="text-lg md:text-xl text-blue-100/70 mb-16 max-w-2xl mx-auto leading-relaxed font-light"
         >
-          Diseño experiencias digitales accesibles, inclusivas y visualmente modernas
-        </motion.p>
-
-        <motion.p
-          initial={{ opacity: 0, y: 30 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ delay: 0.7 }}
-          className="text-lg text-blue-200/60 mb-12 max-w-2xl mx-auto"
-        >
-          Especializada en UX/UI, desarrollo de apps móviles, accesibilidad digital y Lengua de Señas Chilena
+          Apps, plataformas y productos digitales accesibles, modernos y visualmente intuitivos
         </motion.p>
 
         <motion.div
-          initial={{ opacity: 0, y: 30 }}
+          initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
-          transition={{ delay: 0.9 }}
-          className="flex flex-wrap gap-4 justify-center"
+          transition={{ delay: 0.8, duration: 0.6 }}
+          className="flex flex-wrap gap-5 justify-center"
         >
           <Link to="/proyectos">
             <motion.div
-              whileHover={{ scale: 1.05, boxShadow: "0 0 30px rgba(96, 165, 250, 0.5)" }}
-              whileTap={{ scale: 0.95 }}
-              className="px-8 py-4 bg-gradient-to-r from-blue-500 to-purple-500 rounded-full font-medium shadow-lg shadow-blue-500/30"
+              whileHover={{ scale: 1.02, boxShadow: "0 8px 30px rgba(96, 165, 250, 0.25)" }}
+              whileTap={{ scale: 0.98 }}
+              transition={{ duration: 0.2 }}
+              className="px-10 py-4 bg-gradient-to-r from-blue-500/90 to-purple-500/90 rounded-full font-light shadow-lg shadow-blue-500/20 text-white"
             >
               Ver Proyectos
             </motion.div>
           </Link>
           <Link to="/contacto">
             <motion.div
-              whileHover={{ scale: 1.05 }}
-              whileTap={{ scale: 0.95 }}
-              className="px-8 py-4 backdrop-blur-md bg-white/10 border border-white/20 rounded-full font-medium hover:bg-white/20 transition-colors"
+              whileHover={{ scale: 1.02 }}
+              whileTap={{ scale: 0.98 }}
+              transition={{ duration: 0.2 }}
+              className="px-10 py-4 backdrop-blur-sm bg-white/[0.05] border border-white/[0.15] rounded-full font-light hover:bg-white/[0.08] hover:border-white/[0.2] transition-all duration-300"
             >
-              Contáctame
+              Contacto
             </motion.div>
           </Link>
         </motion.div>
