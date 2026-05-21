@@ -13,6 +13,8 @@ import { GlassCard } from '../components/GlassCard';
 import lumiLogo from '../assets/lumi.jpg';
 import emeihLogo from '../assets/emeihtransportes.jpg';
 import equeliLogo from '../assets/equeli.jpg';
+import soloverdeLogo from '../assets/soloverde.png';
+import operoLogo from '../assets/opero.png';
 
 export function Projects() {
   return (
@@ -36,49 +38,47 @@ export function Projects() {
       {/* GRID */}
       <div className="grid md:grid-cols-2 gap-10">
 
-        {/* LUMILINGUA */}
-        <GlassCard delay={0.1}>
-          <div className="relative overflow-hidden rounded-2xl mb-8 bg-gradient-to-br from-blue-500/10 to-purple-500/10 h-64 flex items-center justify-center border border-blue-400/10">
+        {/* EQUELI */}
+        <GlassCard delay={0.5}>
+          <div className="relative overflow-hidden rounded-2xl mb-8 bg-gradient-to-br from-purple-500/10 to-blue-500/10 h-64 flex items-center justify-center border border-purple-400/10">
 
             <motion.div
               animate={{
-                scale: [1, 1.1, 1],
+                scale: [1, 1.05, 1],
                 opacity: [0.2, 0.3, 0.2],
               }}
               transition={{
-                duration: 8,
+                duration: 6,
                 repeat: Infinity,
                 ease: "easeInOut"
               }}
-              className="absolute inset-0 bg-gradient-to-br from-blue-500/20 to-purple-500/20 blur-3xl"
-            />
-
+              className="absolute inset-0 bg-gradient-to-br from-purple-500/20 to-blue-500/20 blur-3xl"
+            />      
             <img
-              src={lumiLogo}
-              alt="Lumilingua"
-              className="relative w-full h-full object-cover rounded-2x1"
-            />
+              src={equeliLogo}
+              alt="Equeli"
+              className="relative w-full h-full object-cover rounded-2x1"/>
           </div>
 
           <h3 className="text-2xl font-medium mb-4 text-blue-100">
-            Lumilingua 
+            Equeli 
           </h3>
 
           <p className="text-blue-100/60 mb-6 leading-relaxed font-light">
-            Plataforma educativa para el aprendizaje de Lengua de Señas Chilena (LSCh), enfocada en accesibilidad, inclusión y experiencias de aprendizaje visuales e interactivas.
+            Plataforma SaaS enfocada en digitalización y optimización de procesos dentro del ecosistema ecuestre mediante herramientas modernas y experiencias intuitivas.
           </p>
 
           <div className="flex flex-wrap gap-2">
-            <span className="px-3 py-1.5 bg-blue-500/10 border border-blue-400/20 rounded-full text-xs text-blue-300/90">
-              Educación Digital
+            <span className="px-3 py-1.5 bg-purple-500/10 border border-purple-400/20 rounded-full text-xs text-purple-300/90">
+              SaaS
             </span>
 
-            <span className="px-3 py-1.5 bg-purple-500/10 border border-purple-400/20 rounded-full text-xs text-purple-300/90">
-              LSCh
+            <span className="px-3 py-1.5 bg-blue-500/10 border border-blue-400/20 rounded-full text-xs text-blue-300/90">
+              Product Design
             </span>
 
             <span className="px-3 py-1.5 bg-pink-500/10 border border-pink-400/20 rounded-full text-xs text-pink-300/90">
-              Accesibilidad
+              UX/UI
             </span>
           </div>
         </GlassCard>
@@ -100,8 +100,10 @@ export function Projects() {
               className="absolute inset-0 bg-gradient-to-br from-violet-500/20 to-indigo-500/20 blur-3xl"
             />
 
-            <LayoutDashboard className="relative w-16 h-16 text-violet-300/80"  
-            />
+            <img
+              src={soloverdeLogo}
+              alt="Soloverde"
+              className="relative w-full h-full object-cover rounded-2x1"/>
           </div>
 
           <h3 className="text-2xl font-medium mb-4 text-blue-100">
@@ -144,8 +146,10 @@ export function Projects() {
               className="absolute inset-0 bg-gradient-to-br from-violet-500/20 to-indigo-500/20 blur-3xl"
             />
 
-            <LayoutDashboard className="relative w-16 h-16 text-violet-300/80"  
-            />
+            <img
+              src={operoLogo}
+              alt="Opero"
+              className="relative w-full h-full object-cover rounded-2x1"/>
 
           </div>
 
@@ -205,47 +209,49 @@ export function Projects() {
           </div>
         </GlassCard>
 
-        {/* EQUELI */}
-        <GlassCard delay={0.5}>
-          <div className="relative overflow-hidden rounded-2xl mb-8 bg-gradient-to-br from-purple-500/10 to-blue-500/10 h-64 flex items-center justify-center border border-purple-400/10">
+        {/* LUMILINGUA */}
+        <GlassCard delay={0.1}>
+          <div className="relative overflow-hidden rounded-2xl mb-8 bg-gradient-to-br from-blue-500/10 to-purple-500/10 h-64 flex items-center justify-center border border-blue-400/10">
 
             <motion.div
               animate={{
-                scale: [1, 1.05, 1],
+                scale: [1, 1.1, 1],
                 opacity: [0.2, 0.3, 0.2],
               }}
               transition={{
-                duration: 6,
+                duration: 8,
                 repeat: Infinity,
                 ease: "easeInOut"
               }}
-              className="absolute inset-0 bg-gradient-to-br from-purple-500/20 to-blue-500/20 blur-3xl"
-            />      
+              className="absolute inset-0 bg-gradient-to-br from-blue-500/20 to-purple-500/20 blur-3xl"
+            />
+
             <img
-              src={equeliLogo}
-              alt="Equeli"
-              className="relative w-full h-full object-cover rounded-2x1"/>
+              src={lumiLogo}
+              alt="Lumilingua"
+              className="relative w-full h-full object-cover rounded-2x1"
+            />
           </div>
 
           <h3 className="text-2xl font-medium mb-4 text-blue-100">
-            Equeli 
+            Lumilingua 
           </h3>
 
           <p className="text-blue-100/60 mb-6 leading-relaxed font-light">
-            Plataforma SaaS enfocada en digitalización y optimización de procesos dentro del ecosistema ecuestre mediante herramientas modernas y experiencias intuitivas.
+            Plataforma educativa para el aprendizaje de Lengua de Señas Chilena (LSCh), enfocada en accesibilidad, inclusión y experiencias de aprendizaje visuales e interactivas.
           </p>
 
           <div className="flex flex-wrap gap-2">
-            <span className="px-3 py-1.5 bg-purple-500/10 border border-purple-400/20 rounded-full text-xs text-purple-300/90">
-              SaaS
+            <span className="px-3 py-1.5 bg-blue-500/10 border border-blue-400/20 rounded-full text-xs text-blue-300/90">
+              Educación Digital
             </span>
 
-            <span className="px-3 py-1.5 bg-blue-500/10 border border-blue-400/20 rounded-full text-xs text-blue-300/90">
-              Product Design
+            <span className="px-3 py-1.5 bg-purple-500/10 border border-purple-400/20 rounded-full text-xs text-purple-300/90">
+              LSCh
             </span>
 
             <span className="px-3 py-1.5 bg-pink-500/10 border border-pink-400/20 rounded-full text-xs text-pink-300/90">
-              UX/UI
+              Accesibilidad
             </span>
           </div>
         </GlassCard>
